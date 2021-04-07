@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #c3cfe2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    &__social-media {
+        width: 300px;
+        transform: translate(220px, 0);
+        &:hover {
+            transform: translate(0, 0);
+            transition: 0.5s transform ease-in;
+        }
+        & a {
+            color: white;
+            font-size: 1.1em;
+            text-align: left;
+            & i {
+                margin-right: 30px;
+                margin-left: 10px;
+            }
+        }
+        &__blog {
+            background-color: #e17b77; 
+            padding: 15px;
+        }
+        &__twitter {
+            background-color: #00aced;
+            padding: 15px;
+        }
+        &__linkedin {
+            background-color: #007bb6;
+            padding: 15px;
+        }
+        &__fb {
+            background-color: #3b5998;
+            padding: 15px;
+        }
+        &__github {
+            background-color: #333;
+            padding: 15px;
+        }
+    }
+}

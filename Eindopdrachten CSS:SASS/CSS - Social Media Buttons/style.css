@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c3cfe2;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container__social-media {
+  width: 300px;
+  -webkit-transform: translate(220px, 0);
+          transform: translate(220px, 0);
+}
+
+.container__social-media:hover {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: 0.5s -webkit-transform ease-in;
+  transition: 0.5s -webkit-transform ease-in;
+  transition: 0.5s transform ease-in;
+  transition: 0.5s transform ease-in, 0.5s -webkit-transform ease-in;
+}
+
+.container__social-media a {
+  color: white;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.container__social-media a i {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.container__social-media__blog {
+  background-color: #e17b77;
+  padding: 15px;
+}
+
+.container__social-media__twitter {
+  background-color: #00aced;
+  padding: 15px;
+}
+
+.container__social-media__linkedin {
+  background-color: #007bb6;
+  padding: 15px;
+}
+
+.container__social-media__fb {
+  background-color: #3b5998;
+  padding: 15px;
+}
+
+.container__social-media__github {
+  background-color: #333;
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */
