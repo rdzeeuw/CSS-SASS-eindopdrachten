@@ -10,7 +10,7 @@ body {
   -ms-grid-columns: (minmax(100px, 0.3fr))[3];
       grid-template-columns: repeat(3, minmax(100px, 0.3fr));
   grid-gap: 20px;
-  width: 100vw;
+  width: calc(100vw-40px);
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

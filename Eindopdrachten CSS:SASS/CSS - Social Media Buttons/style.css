@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #c3cfe2;
 }
 
@@ -18,14 +20,19 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
 
 .container__social-media {
   width: 300px;
-  -webkit-transform: translate(220px, 0);
-          transform: translate(220px, 0);
+  -webkit-transform: translate(230px, 0);
+          transform: translate(230px, 0);
+  -webkit-transition: 0.5s -webkit-transform ease-in;
+  transition: 0.5s -webkit-transform ease-in;
+  transition: 0.5s transform ease-in;
+  transition: 0.5s transform ease-in, 0.5s -webkit-transform ease-in;
 }
 
 .container__social-media:hover {
@@ -44,7 +51,7 @@ body {
 }
 
 .container__social-media a i {
-  margin-right: 30px;
+  margin-right: 35px;
   margin-left: 10px;
 }
 

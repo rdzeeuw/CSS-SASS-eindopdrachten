@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: #c3cfe2;
 }
 
@@ -9,11 +10,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
     &__social-media {
         width: 300px;
-        transform: translate(220px, 0);
+        transform: translate(230px, 0);
+        transition: 0.5s transform ease-in;
         &:hover {
             transform: translate(0, 0);
             transition: 0.5s transform ease-in;
@@ -23,7 +26,7 @@ body {
             font-size: 1.1em;
             text-align: left;
             & i {
-                margin-right: 30px;
+                margin-right: 35px;
                 margin-left: 10px;
             }
         }
